@@ -6,14 +6,14 @@ This repository contains a sample project demonstrating Spring Boot integration 
 
 Ensure the following tools are installed on your machine:
 
-***- Docker Desktop or Docker Engine***
+**- Docker Desktop or Docker Engine**
 
 Verify your Docker installation by running:
 ```
 docker info
 ```
 
-***- Confluent CLI***
+**- Confluent CLI**
 
 Install via Homebrew (macOS):
 ```
@@ -29,7 +29,7 @@ confluent local kafka start
 ```
 After startup, note the Plaintext Ports displayed in the terminal. These will be required for client configuration.
 
-***2. Create a Kafka Topic***
+**2. Create a Kafka Topic**
 
 Create a topic named ```purchases```, which will be used for producing and consuming events:
 
@@ -41,13 +41,13 @@ confluent local kafka topic create purchases
 
 You can run the producer and consumer components individually using Maven.
 
-***Start the Producer Application***
+**Start the Producer Application**
 
 ```
 mvn spring-boot:run -Dspring-boot.run.arguments='--producer'
 ```
 
-***Start the Consumer Application***
+**Start the Consumer Application**
 ```
 mvn spring-boot:run -Dspring-boot.run.arguments='--consumer'
 ```
