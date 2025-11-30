@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class Consumer {
     private final Logger logger = LoggerFactory.getLogger(Consumer.class);
 
-    @KafkaListener(id = "myConsumer", topics = "purchases", groupId = "spring-kafka", autoStartup = "false")
+    @KafkaListener(id = "myConsumer", topics = "purchases", groupId = "spring-boot_kafka-group-1", autoStartup = "false")
     public void listen(String value,
                        @Header(KafkaHeaders.RECEIVED_TOPIC) String topic,
                        @Header(KafkaHeaders.RECEIVED_KEY) String key) {
