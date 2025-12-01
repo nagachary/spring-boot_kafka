@@ -27,7 +27,8 @@ Follow the steps below to set up and run Kafka using the Confluent CLI:
 ```
 confluent local kafka start
 ```
-After startup, note the Plaintext Ports displayed in the terminal. These will be required for client configuration.
+After startup, note the ```Plaintext Ports``` displayed in the terminal. These will be required for client configuration.
+Update the port value for  the ```spring.kafka.bootstrap-servers``` property in application.properties file.
 
 **2. Create a Kafka Topic**
 

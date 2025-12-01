@@ -35,11 +35,11 @@ public class SpringBootWithKafkaApplication {
             for (String arg : args) {
                 switch (arg) {
                     case "--producer":
-                        this.producer.sendMessage("key_01", "message_01");
-                        this.producer.sendMessage("key_02", "message_02");
-                        this.producer.sendMessage("key_03", "message_03");
-                        this.producer.sendMessage("key_04", "message_04");
-                        this.producer.sendMessage("key_05", "message_05");
+                        this.producer.sendMessage("message_01");
+                        this.producer.sendMessage("message_02");
+                        this.producer.sendMessage("message_03");
+                        this.producer.sendMessage("message_04");
+                        this.producer.sendMessage("message_05");
                         break;
                     case "--consumer":
                         MessageListenerContainer listenerContainer = kafkaListenerEndpointRegistry.getListenerContainer("myConsumer");
